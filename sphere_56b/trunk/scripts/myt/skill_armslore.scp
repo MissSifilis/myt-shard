@@ -890,7 +890,7 @@ tooltip_weapons
 return 1
 
 ON=@DCLICK
-IF (<src.IsNearType t_anvil,1>) || (<src.IsGM>)
+IF (<src.IsNearType t_anvil,1>)&&(<id>==<0fb4>) || (<src.IsGM>)
     src.craft_loadLevel 1
 ELSE
     src.sysmessagered Voce presisa estar perto de uma bigorna.
